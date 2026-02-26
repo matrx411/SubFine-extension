@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubFine – Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 12px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+
+        .highlight {
+            background: #f0f8ff;
+            border-left: 4px solid #007bff;
+            padding: 12px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .date {
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>SubFine – Privacy Policy</h1>
+    <p class="date">Last Updated: February 2026</p>
+
+    <div class="highlight">
+        <strong>Summary:</strong> SubFine does not collect, store, or share any personal data. All subtitle processing
+        is done locally in your browser.
+    </div>
+
+    <h2>1. What is SubFine?</h2>
+    <p>SubFine is a free browser extension that helps users manage, display, and translate subtitles on video streaming
+        websites. It works entirely within your browser without sending your personal data to any external servers.</p>
+
+    <h2>2. Data We Do NOT Collect</h2>
+    <p>SubFine does <strong>not</strong> collect, store, or transmit:</p>
+    <ul>
+        <li>Your name, email, or any personal identifiers</li>
+        <li>Browsing history or visited URLs</li>
+        <li>Video content you watch</li>
+        <li>Subtitle content you upload or display</li>
+        <li>Any behavioral analytics or tracking data</li>
+    </ul>
+
+    <h2>3. How SubFine Works</h2>
+    <p>SubFine operates entirely locally inside your browser. When you upload a subtitle file or use the AI translation
+        feature, all processing happens on your device. The extension only contacts external services in the following
+        limited cases:</p>
+    <ul>
+        <li><strong>AI Translation:</strong> Subtitle text may be sent to Google Translate API solely for the purpose of
+            translation. No user-identifying data is included in these requests.</li>
+        <li><strong>Remote Notifications:</strong> The extension may fetch a JSON configuration file from GitHub to
+            display update notifications. No personal data is sent.</li>
+        <li><strong>QR Code Generation:</strong> When viewing a crypto donation address, a QR code image is generated
+            via an external API using only the wallet address string.</li>
+    </ul>
+
+    <h2>4. Permissions Explained</h2>
+    <ul>
+        <li><strong>activeTab / scripting:</strong> Required to detect and interact with video players on the page you
+            are currently viewing.</li>
+        <li><strong>storage:</strong> Used to save your personal preferences (e.g., subtitle font size, filter rules)
+            locally in your browser. This data never leaves your device.</li>
+        <li><strong>downloads:</strong> Used exclusively to save subtitle files (SRT/VTT format) to your computer when
+            you request it. The extension does not download any video content.</li>
+        <li><strong>webRequest:</strong> Used to intercept subtitle file requests made by video players in order to
+            process and display them through SubFine's custom renderer.</li>
+    </ul>
+
+    <h2>5. Third-Party Services</h2>
+    <p>SubFine may interact with the following external services solely to provide its core features:</p>
+    <ul>
+        <li><strong>Google Translate API</strong> – for optional subtitle translation</li>
+        <li><strong>GitHub (raw.githubusercontent.com)</strong> – for optional remote configuration and notifications
+        </li>
+        <li><strong>api.qrserver.com</strong> – for optional QR code generation for donation addresses</li>
+    </ul>
+    <p>SubFine is not affiliated with any of these services, and your use of the extension is subject to the respective
+        privacy policies of these providers.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>SubFine does not knowingly collect any information from children under 13 years of age.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>If we make changes to this privacy policy, we will update the "Last Updated" date at the top. Continued use of
+        the extension after changes constitutes your acceptance of the updated policy.</p>
+
+    <h2>8. Contact</h2>
+    <p>If you have any questions about this privacy policy, please open an issue on our <a href="https://github.com"
+            target="_blank">GitHub repository</a>.</p>
+
+</body>
+
+</html>
